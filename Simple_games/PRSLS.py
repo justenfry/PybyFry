@@ -63,8 +63,44 @@ while True:
     elif user_input == computer_pick:
         print("Draw")
 
-    else:
-        print("You lost!")
+    elif computer_pick == "rock" and user_input == "scissors":
+        print("Rock crushes your Scissors!")
+        computer_wins += 1
+
+    elif computer_pick == "paper" and user_input == "rock":
+        print("Paper covers your Rock!")
+        computer_wins += 1
+
+    elif computer_pick == "scissors" and user_input == "paper":
+        print("Scissors cuts your Paper!")
+        computer_wins += 1
+
+    elif computer_pick == "scissors" and user_input == "lizard":
+        print("Scissors decapitates your Lizard!")
+        computer_wins += 1
+
+    elif computer_pick == "lizard" and user_input == "paper":
+        print("Lizard eats your Paper!")
+        computer_wins += 1
+
+    elif computer_pick == "lizard" and user_input == "spock":
+        print("Lizard poisons your Spock")
+        computer_wins += 1
+
+    elif computer_pick == "rock" and user_input == "lizard":
+        print("Rock crushes your Lizard!")
+        computer_wins += 1
+
+    elif computer_pick == "spock" and user_input == "scissors":
+        print("Spock smashes your Scissors!")
+        computer_wins += 1
+
+    elif computer_pick == "spock" and user_input == "rock":
+        print("Spock vaporizes your Rock!")
+        computer_wins += 1
+
+    elif computer_pick == "paper" and user_input == "spock":
+        print("Paper disproves your Spock!")
         computer_wins += 1
 
 print("You won", user_wins, "times.")
