@@ -1,4 +1,5 @@
 from random import *
+from time import sleep
 
 Tom = 0
 Oliver = 0
@@ -32,3 +33,5 @@ elif Oliver == 2:
     print("The winner is Oliver!")
 elif Sydney:
     print("The winner is Sydney!")
+
+sleep(10)
